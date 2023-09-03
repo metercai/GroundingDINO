@@ -37,7 +37,7 @@ version= [l for l in lines if l.startswith('__version__')][0].split('=')[1].stri
 package_name = "groundingdino"
 cwd = os.path.dirname(os.path.abspath(__file__))
 
-with open('README.md') as readme_file:
+with open('README.md',encoding="utf_8") as readme_file:
     readme = readme_file.read()
 
 sha = "Unknown"
